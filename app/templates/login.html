@@ -1,0 +1,27 @@
+<!-- extend from base layout -->
+{% extends "base.html" %}
+
+{% block content %}
+  <center>
+  <h1>Start</h1>
+  <form action="" method="post" name="login">
+    <div>
+      {{ form.hidden_tag() }}
+      <p>
+          What is your name?<br>
+          {{ form.name(size=80) }}<br>
+      </p>
+      <p>
+        What is your classrace?<br>
+        {% for subfield in form.race %}
+        <tr>
+          <td>{{ subfield }}</td>
+          <td>{{ subfield.label }}</td>
+        </tr>
+      </p>
+    </div>
+{% endfor %}
+      <p><input type="submit" value="OK!"></p>
+  </form>
+ </center>
+{% endblock %}
