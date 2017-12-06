@@ -2,26 +2,38 @@
 {% extends "base.html" %}
 
 {% block content %}
-  <center>
   <h1>Start</h1>
+  <div class="charform">
   <form action="" method="post" name="login">
-    <div>
+    <div class="character_form">
       {{ form.hidden_tag() }}
       <p>
           What is your name?<br>
           {{ form.name(size=80) }}<br>
       </p>
+
       <p>
-        What is your classrace?<br>
+        What is your race?<br>
         {% for subfield in form.race %}
         <tr>
           <td>{{ subfield }}</td>
           <td>{{ subfield.label }}</td>
         </tr>
+        {% endfor %}
       </p>
-    </div>
-{% endfor %}
+
+      <p>
+        What is your class?<br>
+        {% for subfield in form.clss %}
+        <tr>
+          <td>{{ subfield }}</td>
+          <td>{{ subfield.label }}</td>
+        </tr>
+        {% endfor %}
+      </p>
+       
       <p><input type="submit" value="OK!"></p>
+    </div>
   </form>
- </center>
+  </div>
 {% endblock %}

@@ -1,0 +1,23 @@
+<!-- extend from base layout -->
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>{{roomname}}</h1>
+  <div class="room">
+    {% if image != None %}
+    <p>
+    <img src="/static/images/{{image}}" width=512/>
+    </p>
+    {% endif %}
+  {{roomdesc}}
+{% endblock %}
+
+{% block footer %}
+  <p>
+    Exits: 
+  {% for exit in exits %}
+    <div class="exit"> <a href="adventure?room={{exit[0]}}">{{exit[1]}}</a> </div>
+  {% endfor %}
+  </p>
+  </div>
+{% endblock %}

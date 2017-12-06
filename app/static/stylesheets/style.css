@@ -1,0 +1,65 @@
+h1 {
+    text-align: center;
+    text-shadow: 3px 2px gray;
+    text-transform: uppercase;
+}
+
+a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover, a:active {
+    background-color: red;
+}
+
+table, th, td {
+    text-align: left;
+}
+
+
+form {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.charform {
+    margin: 0 auto;
+}
+
+.character_form {
+    text-align: left;
+    width: 40%;
+    background-color: #eeeeff;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.room {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.exit {
+    display: inline-block;
+}
+
+.exit a:link, .exit a:visited, .exit a:hover, .exit a:active  {
+    background-color: #34433f;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;    
+}
+
+img {
+    display: block;
+    width: 40%;
+    height: auto;
+    margin: 0 auto;
+}
