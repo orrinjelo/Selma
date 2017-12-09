@@ -4,20 +4,43 @@
 {% block content %}
   <h1>{{roomname}}</h1>
   <div class="room">
+    <div class="imageblock">
     {% if image != None %}
     <p>
-    <img src="/static/images/{{image}}" width=512/>
+    <img src="/static/images/{{image}}" width=512 />
     </p>
     {% endif %}
-  {{roomdesc}}
+    </div>
+  <div class="entrybar">
+  <div class="leftbar">{{enemystats}}</div>
+  <div class="centerbar">{{roomdesc}}</div>
+  <div class="rightbar">{{playerstats}}</div>
+  </div>
+  <div class="entrybar">
+<div class="centerbar">
 {% endblock %}
 
 {% block footer %}
+
+ {% if actions %}
+  <p>
+    Actions: 
+  {% for action in actions %}
+    <div class="exit"> <a href="{{thispage}}?room={{thisroom}}&action={{action[0]}}">{{action[1]}}</a> </div>
+  {% endfor %}
+  </p>
+ {% endif %}
+
+
+ {% if exits %}
   <p>
     Exits: 
   {% for exit in exits %}
     <div class="exit"> <a href="adventure?room={{exit[0]}}">{{exit[1]}}</a> </div>
   {% endfor %}
   </p>
+ {% endif %}
   </div>
+</div>
+</div>
 {% endblock %}

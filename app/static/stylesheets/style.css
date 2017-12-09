@@ -41,7 +41,39 @@ form {
 
 .room {
     margin: 0 auto;
-    width: 50%;
+    width: 100%;
+}
+
+.entrybar {
+    display: inline-block;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+
+.leftbar, .rightbar {
+    display: inline-block;
+    text-align: center;
+    width: 20%;
+    background-color: #eeeeff;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.centerbar {
+    display: inline-block;
+    text-align: left;
+    width: 40%;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.imageblock {
+    display: block;
+    text-align: left;
+    width: 60%;
+    margin: 0 auto;
+    padding: 5px;
 }
 
 .exit {

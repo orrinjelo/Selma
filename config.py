@@ -91,6 +91,7 @@ encounters = {
         'image': None,
         'hp': 1,
         'speed': 0,
+        'strength': 1,
         'attack': ['It flicks itself at you.',],
         'death': 'It gets lost somewhere in the dust...oh well.'
     },
@@ -100,6 +101,7 @@ encounters = {
         'image': None,
         'hp': 2,
         'speed': 4,
+        'strength': 2,
         'attack': ['It bites you with its widdle fangs.',],
         'death': 'It got squooshed.'
     },
@@ -109,27 +111,44 @@ encounters = {
         'image': None,
         'hp': 5,
         'speed': 3,
+        'strength': 5,
         'attack': ['After hissing, it chomps down on your toes.',],
-        'death': 'Poor mongoose.  It died without its oatmeal.  You monster.'
+        'death': 'Poor mongoose.  It died without its oatmeal.  You monster.',
     },
     'cadenbot': {
+        'name': 'Cadenbot',
+        'description': 'Cadenbot is not a bot....or is it?',
+        'image': None,
+        'hp': 8,
+        'speed': 2,
+        'strength': 7,
+        'attack': ['Cadenbot says something sarcastic about you.',],
+        'death': 'Cadenbot fails to respond.  You assume it\'s dead...if it ever was real...',
     },
     'dangerfloof': {
+        'name': 'Dangerfloof',
+        'description': 'The fluffiest dangerfloof you\'ve ever seen...and probably the most hungry.',
+        'image': None,
+        'hp': 35,
+        'speed': 4,
+        'strength': 20,
+        'attack': ['Spittle flies from its mouth as the dangerfloof roars at you.','The dangerfloof swipes you right as if you were a Tinder profile.','The dangerfloof tries to bite your face off!'],
+        'death': 'With your finishing blow, the dangerfloof sprawls flat on the ground, looks up at you with puppy dog eyes, and closes them with its tongue protruding from its lips.  It is dead.',    
     },
-    'dangernoodle': {
-    },
-    'ghost': {
-    },
-    'catfish': {
-    },
-    'ghost': {
-    },
-    'jelobot': {
-    },
-    'pig': {
-    },
-    'frog': {
-    },
+    # 'dangernoodle': {
+    # },
+    # 'ghost': {
+    # },
+    # 'catfish': {
+    # },
+    # 'ghost': {
+    # },
+    # 'jelobot': {
+    # },
+    # 'pig': {
+    # },
+    # 'frog': {
+    # },
 }
 
 bosses = {
